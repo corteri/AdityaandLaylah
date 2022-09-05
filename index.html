@@ -4,12 +4,55 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   </head>
+    <body>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <header>
+      <nav style="background-color:white;">
+          <div class="nav-wrapper" >
+            <a href="#!" class="brand-logo" style="color:black; padding: 5px;">Steve Jobs</a>
+          </div>
+        </nav>
+      </header>
+      <div class="parallax-container">
+        <center><h2 style="color:white;">Macbook</h2></center>
+          <div class="parallax"><img src="./resources/macbook.jpg"></div>
+        </div>
+        <div class="parallax-container">
+          <center><h2 style="color:white;">Specification</h2></center>
+        <section><b><p class="flow-text" style="color:white; padding:10px">Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American entrepreneur, industrial designer, business magnate, media proprietor, and investor. He was the co-founder, chairman, and CEO of Apple; the chairman and majority shareholder of Pixar; a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and the founder, chairman, and CEO of NeXT. He is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with his early business partner and fellow Apple co-founder Steve Wozniak.</p></b></section>
+  
+          <div class="parallax"><img src="./resources/macbook1.jfif"></div>
+        </div>
+  
+        <div class="parallax-container">
+          <center><h2 style="color:white;">Childhood</h2></center>
+        <section><b><p class="flow-text" style="color:white; padding:10px">I always thought of myself as a humanities person as a kid, but I liked electronics… then I read something that one of my heroes, Edwin Land of Polaroid, said about the importance of people who could stand at the intersection of humanities and sciences, and I decided that's what I wanted to do.   ~Steve Jobs</p></b></section>
+  
+          <div class="parallax"><img src="./resources/macbook-1.jpg"></div>
+        </div>
+  
+        <div class="parallax-container">
+          <center><h2 style="color:white;">Great Word</h2></center>
+        <section><b><p class="flow-text" style="color:white; padding:10px">“Here’s to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes. The ones who see things differently; they’re not fond of rules. You can quote them, disagree with them, glorify or vilify them, but the only thing you can’t do is ignore them because they change things.
+  
+          They push the human race forward, and while some may see them as the crazy ones, we see genius, because the ones who are crazy enough to think that they can change the world, are the ones who do.”   ~Steve Jobs</p></b></section>
+  
+          <div class="parallax"><img src="./resources/macbook.jpg"></div>
+        </div>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <P>Hello World</P>
+
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.parallax');
+          var instances = M.Parallax.init(elems, 0);
+        });
+      </script>
+
 
     <!--
 
@@ -24,5 +67,4 @@
 
     -->
     <script  src="js/index.js"></script>
-  </body>
 </html>
