@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+   
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   </head>
+   <style>
+      @media (min-width: 500px){
+        
+      }
+      body{
+        display:flex;
+      }
+      </style>
     <body>
       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <header>
-      <nav style="background-color:white;">
-          <div class="nav-wrapper" >
-            <a href="#!" class="brand-logo" style="color:black; padding: 5px;"><img src="./resources/applelogo.png"></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#" class = "">About</a></li>
+      <header id="header">
+      <nav style="background-color:white; position:fixed;top:0" id="nav-bar">
+         <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#about" class = "nav-link">About</a></li>
+              <li><a href="#pricing" class = "nav-link">Pricing</a></li>
+              <li><a href="#history" class = "nav-link">History</a></li>
             </ul>
+          <div class="nav-wrapper" >
+            <a href="#!" class="brand-logo" style="color:black; padding: 5px;"><img src="./resources/applelogo.png" id="header-img"></a>
           </div>
         </nav>
       </header>
@@ -24,40 +35,38 @@
           <div class="parallax"><img src="./resources/macbook.jpg"></div>
         </div>
         <div class="parallax-container">
-          <center><h2 style="color:white;">Specification</h2></center>
-        <section><b><p class="flow-text" style="color:white; padding:10px">Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American entrepreneur, industrial designer, business magnate, media proprietor, and investor. He was the co-founder, chairman, and CEO of Apple; the chairman and majority shareholder of Pixar; a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and the founder, chairman, and CEO of NeXT. He is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with his early business partner and fellow Apple co-founder Steve Wozniak.</p></b></section>
+          <center><h2 style="color:white;" id="about">About</h2></center>
+        <section><b><p class="flow-text" style="color:white; padding:10px">The MacBook Pro is a line of Macintosh notebook computers by Apple Inc. Introduced in January 2006, it is the higher-end model of the MacBook family, sitting above the consumer-focused MacBook Air. It is currently sold with 13-inch, 14-inch, and 16-inch screens, all using variants of the Apple-designed M1 and M2 system on a chip.
+
+The first-generation MacBook Pro used the design of the PowerBook G4, but replaced the PowerPC G4 chips with Intel Core processors, added a webcam, and introduced the</p></b></section>
   
           <div class="parallax"><img src="./resources/macbook1.jfif"></div>
         </div>
-        <div class="parallax-container">
-          <center><h2 style="color:white;">Childhood</h2></center>
+        <div class="parallax-container" >
+          <center><h2 style="color:white;" id="pricing">pricing</h2></center>
         <section><b><p class="flow-text" style="color:white; padding:10px">I always thought of myself as a humanities person as a kid, but I liked electronics… then I read something that one of my heroes, Edwin Land of Polaroid, said about the importance of people who could stand at the intersection of humanities and sciences, and I decided that's what I wanted to do.   ~Steve Jobs</p></b></section>
           <div class="parallax"><img src="./resources/macbook-1.jpg"></div>
         </div>
 
         <div class="parallax-container">
-          <center><h2 style="color:white;">Great Word</h2></center>
+          <center><h2 style="color:white;" id="history">History</h2></center>
         <section><b><p class="flow-text" style="color:white; padding:10px">“Here’s to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes. The ones who see things differently; they’re not fond of rules. You can quote them, disagree with them, glorify or vilify them, but the only thing you can’t do is ignore them because they change things.
+  
           They push the human race forward, and while some may see them as the crazy ones, we see genius, because the ones who are crazy enough to think that they can change the world, are the ones who do.”   ~Steve Jobs</p></b></section>
+  
           <div class="parallax"><img src="./resources/macbook.jpg"></div>
         </div>
-<iframe width="853" id="video" height="480" src="https://www.youtube.com/embed/9tobL8U7dQo" title="The new MacBook Pro | Supercharged for pros | Apple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="853" id="video" height="480" src="https://www.youtube.com/embed/9tobL8U7dQo" title="The new MacBook Pro | Supercharged for pros | Apple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </iframe>
-
-<form>
+        
   <div class="row">
-    <form class="col s12" action = "https://www.freecodecamp.com/email-submit">
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="email" class="validate">
-          <label for="icon_prefix">Email</label>
-        </div>
-      </div>
-      <button class="btn btn-primary" id="submit"></button>
-    </form>
-  </div>
+
+ <form action = "https://www.freecodecamp.com/email-submit" id="form">
+  <input type="email" id="email" name="email" placeholder="placeholder text"/>
+  <input type="submit" id="submit" name="submit"/>
 </form>
+  </div>
+
 
 
 
@@ -83,4 +92,5 @@
 
     -->
     <script  src="js/index.js"></script>
+    
 </html>
